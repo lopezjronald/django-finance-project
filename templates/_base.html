@@ -25,7 +25,7 @@
 
 <nav id="base-navbar" class="navbar navbar-expand-sm navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}">LOGO</a>
+        <a class="navbar-brand" href="{% url 'home' %}"><img class="img-responsive" src="{% static 'images/scalp.png' %}" alt="responsive image"></a>
         <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,13 +35,13 @@
                     <a class="nav-link" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="{% url 'career' %}">Careers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
             </ul>
         </div>
@@ -55,7 +55,7 @@
 <footer id="main-footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mb-3">
+            <div class="col text-center my-3">
                 <p>Scalp Trade LLC Copyright &copy;<span id="year"></span></p>
                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#contactModal">Contact Us
                 </button>
