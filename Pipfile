@@ -15,6 +15,7 @@ canvas = "*"
 django-crispy-forms = "*"
 pip = "*"
 django-allauth = "*"
+environs = {extras = ["django"], version = "*"}
 
 [requires]
 python_version = "3.8"

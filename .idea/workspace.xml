@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="62e25493-c7b9-4bed-be29-1794d8d1b688" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600641584835</updated>
-      <workItem from="1600641587300" duration="93827000" />
+      <workItem from="1600641587300" duration="95178000" />
     </task>
     <servers />
   </component>
@@ -63,10 +63,10 @@
       <screen x="0" y="0" width="3840" height="1560" />
     </state>
     <state x="466" y="438" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.-557.1920.1060/0.0.3840.1560@0.0.3840.1560" timestamp="1600749126967" />
-    <state x="1492" y="428" key="SettingsEditor" timestamp="1600751886934">
+    <state x="1492" y="428" key="SettingsEditor" timestamp="1600813696283">
       <screen x="0" y="0" width="3840" height="1560" />
     </state>
-    <state x="1492" y="428" key="SettingsEditor/3840.-557.1920.1060/0.0.3840.1560@0.0.3840.1560" timestamp="1600751886934" />
+    <state x="1492" y="428" key="SettingsEditor/3840.-557.1920.1060/0.0.3840.1560@0.0.3840.1560" timestamp="1600813696283" />
     <state x="900" y="360" key="search.everywhere.popup" timestamp="1600715390122">
       <screen x="0" y="0" width="3840" height="1560" />
     </state>
