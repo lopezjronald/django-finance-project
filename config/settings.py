@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     # local
     'accounts',
@@ -43,7 +44,9 @@ INSTALLED_APPS = [
     'applicants',
 
     # 3rd party
-
+    'crispy_forms',
+    'allauth',
+    'allauth.account',
 ]
 
 MIDDLEWARE = [
@@ -127,9 +130,38 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 
+# For Production
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+
+STATICFILES_FINDERS = [
+    # Looks within STATICFILES for any static files
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    # Looks for Directories named static located within app
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+]
+
 # MEDIA FILES (Documents, Images)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 # Custom Authorized User
 AUTH_USER_MODEL = 'accounts.CustomUser'
+LOGIN_REDIRECT_URL = 'home'
+ACCOUNT_LOGOUT_REDIRECT = 'home'
+
+# django-allauth config
+SITE_ID = 1
+
+# Django-allauth config
+AUTHENTICATION_BACKENDS = (
+    # Django attempting to authenticate user
+    'django.contrib.auth.backends.ModelBackend',
+    # Switches over to using login via e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+# Temporary email location
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Django Crispy Forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

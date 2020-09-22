@@ -24,6 +24,13 @@ html, body {
     background-size: contain;
 }
 
+/* HOMEPAGE */
+.avatar {
+    height: 300px;
+    width: auto;
+}
+
+
 #top-header-section {
     background: #c7e2b2;
     color: #092532 !important;
@@ -42,13 +49,21 @@ html, body {
     margin-bottom: 8px;
 }
 
-
 #career-form .btn {
     background: #e1ffc2;
     color: #092532;
     font-weight: bolder;
     border-color: #092532;
     border-radius: 16px;
+}
+
+#login-button {
+    background: #e1ffc2;
+    color: #092532;
+    border-color: #092532;
+    border-radius: 16px !important;
+    width: 100% !important;
+    font-weight: bolder;
 }
 
 #career-form textarea {

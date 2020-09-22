@@ -12,6 +12,9 @@ psycopg2-binary = "*"
 pillow = "*"
 reportlab = "*"
 canvas = "*"
+django-crispy-forms = "*"
+pip = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.8"

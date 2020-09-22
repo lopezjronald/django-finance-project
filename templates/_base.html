@@ -46,6 +46,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
+
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Employee Login</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
     </div>
@@ -87,6 +97,7 @@
 
 <!-- SLICK SLIDER JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script src="{% static 'js/base.js' %}"></script>
 <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
