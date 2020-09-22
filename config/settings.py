@@ -158,8 +158,14 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-# Temporary email location
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# SMPT Email Relay
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'admin@scalptrade.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Changes to only enter password once
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False

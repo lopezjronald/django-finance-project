@@ -16,6 +16,10 @@ django-crispy-forms = "*"
 pip = "*"
 django-allauth = "*"
 environs = {extras = ["django"], version = "*"}
+django-allauth-templates-bootstrap4 = "*"
+django-i18n = "*"
+django-l10n = "*"
+django-translate = "*"
 
 [requires]
 python_version = "3.8"
