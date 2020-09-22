@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+{% block title %}Applicant {{ applicant.first_name }} {{ applicant.last_name }}{% endblock title %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4">{{ applicant.first_name }} {{ applicant.last_name }}</h1>
+                <p class="lead">Phone Number: {{ applicant.phone }}</p>
+                <p class="lead">Email: {{ applicant.email }}</p>
+                <p class="lead">Requires Sponsorship:
+                    {% if applicant.sponsorship %}
+                        <span class="text-danger">Yes</span>
+                    {% else %}
+                        <span class="text-success">No</span>
+                    {% endif %}
+                </p>
+                <p>{{ applicant.resume }}</p>
+                <p>{{ applicant.cover_letter }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

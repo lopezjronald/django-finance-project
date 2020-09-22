@@ -23,9 +23,11 @@
 </head>
 <body data-spy="scroll" data-target="#base-nav" id="home">
 
-<nav id="base-navbar" class="navbar navbar-expand-sm navbar-dark fixed-top">
+<nav id="base-navbar" class="navbar navbar-expand navbar-dark py-3">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}"><img class="img-responsive" src="{% static 'images/scalp.png' %}" alt="responsive image"></a>
+        <a class="navbar-brand" href="{% url 'home' %}"><img class="img-responsive"
+                                                             src="{% static 'images/scalp.png' %}"
+                                                             alt="responsive image"></a>
         <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,54 +50,20 @@
     </div>
 </nav>
 
-
 {% block content %}{% endblock content %}
 
 <!--FOOTER-->
-<footer id="main-footer">
-    <div class="container-fluid">
+<footer class="footer p-0 mt-5">
+    <div class="container">
         <div class="row">
             <div class="col text-center my-3">
-                <p>Scalp Trade LLC Copyright &copy;<span id="year"></span></p>
-                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#contactModal">Contact Us
-                </button>
+                <p>Scalp Trade LLC</p>
+                <p class="mt-0">Copyright &copy; <span id="year"></span></p>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- CONTACT MODAL -->
-<div class="modal fade text-dark" id="contactModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Contact Us</h5>
-                <button class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-block">Submit</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script crossorigin="anonymous"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -139,6 +107,10 @@
         }
     });
 
+    $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
     // Slick Slider
     $('.slider').slick({
         infinite: true,

@@ -35,7 +35,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # local
+    'accounts',
     'pages',
+    'jobs',
+    'applicants',
+
+    # 3rd party
+
 ]
 
 MIDDLEWARE = [
@@ -119,3 +127,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 
+# MEDIA FILES (Documents, Images)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
+
+# Custom Authorized User
+AUTH_USER_MODEL = 'accounts.CustomUser'

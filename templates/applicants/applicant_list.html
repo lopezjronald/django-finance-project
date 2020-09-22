@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+{% block title %}Scalp Trade Applicants{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="display-4">List of Applicants</h1>
+        {% for applicant in applicant_list %}
+            <div class="row">
+                <div class="col">
+                    <a href="{{ applicant.get_absolute_url }} "><p class="lead">{{ applicant.first_name }} {{ applicant.last_name }}</p></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
