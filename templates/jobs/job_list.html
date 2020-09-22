@@ -3,11 +3,15 @@
 
 {% block content %}
     <div class="container">
-        <h1 class="display-4">List of Applicants</h1>
-        {% for applicant in applicant_list %}
+        <h1 class="mt-3">List of Jobs</h1>
+        {% for job in job_list %}
             <div class="row">
                 <div class="col">
-                    <a href="{{ applicant.get_absolute_url }} "><p class="lead">{{ applicant.first_name }} {{ applicant.last_name }}</p></a>
+                    <a href="{% url 'job_detail' %} ">
+                        <p class="lead">
+                            Title {{ job.title }}
+                        </p>
+                    </a>
                 </div>
             </div>
         {% endfor %}

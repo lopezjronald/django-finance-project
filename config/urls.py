@@ -24,9 +24,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Django Management
-    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('allauth.urls')),
 
     # Django Local Apps
-    path('applicants/', include('applicants.urls')),
     path('', include('pages.urls')),
+    path('jobs/', include('jobs.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

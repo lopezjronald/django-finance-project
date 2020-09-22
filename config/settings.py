@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'jobs',
-    'applicants',
 
     # 3rd party
     'crispy_forms',
@@ -146,8 +145,11 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 # Custom Authorized User
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# LOGIN/LOGOUT/SIGNUP
 LOGIN_REDIRECT_URL = 'home'
 ACCOUNT_LOGOUT_REDIRECT = 'home'
+# ACCOUNT_SESSION_REMEMBER = True
 
 # django-allauth config
 SITE_ID = 1
@@ -159,6 +161,14 @@ AUTHENTICATION_BACKENDS = (
     # Switches over to using login via e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
+
+# Changes to only enter password once
+# ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
 
 # Temporary email location
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
