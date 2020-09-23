@@ -1,6 +1,5 @@
 import uuid
 
-from django.contrib.auth import get_user_model
 from django.db import models
 from django.urls import reverse
 
@@ -20,9 +19,6 @@ class Job(models.Model):
 
     def get_absolute_url(self):
         return reverse('job_detail', args=[str(self.id)])
-
-
-
 
 
 class Requirement(models.Model):

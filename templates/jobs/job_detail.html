@@ -6,7 +6,7 @@
 
 {# JOB DESCRIPTION #}
 {% block content %}
-        {# JOB DESCRIPTION #}
+    {# JOB DESCRIPTION #}
     <section id="job-description" class="mt-4">
         <div class="row">
             <div class="col-md-6 mr-5">
@@ -136,5 +136,12 @@
                 </div>
             </div>
         </form>
+    <form class="form" action="{% url 'application' %}">
+        <ul>
+            <li>
+                <a class="link" href="{% url 'application' %}"><span class="btn btn-md">Apply</span></a>
+            </li>
+        </ul>
+    </form>
     </section>
 {% endblock content %}
