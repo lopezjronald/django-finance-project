@@ -4,12 +4,16 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-    {% if user.is_authenticated %}
-        <div class="container text-center mt-5">
-            <img class="avatar" src="{% static 'images/avatar.jpg' %}" alt="">
-            <h1 class="mt-3">Hello {{ user.email }}!</h1>
-        </div>
-    {% else %}
-        <h2 class="mt-3">Homepage</h2>
-    {% endif %}
+    <div id="homepage">
+        {% if user.is_authenticated %}
+            <div class="text-center mt-5 mx-0 px-0">
+                <img class="avatar" src="{% static 'images/avatar.jpg' %}" alt="">
+                <h1 class="mt-3">Hello {{ user.email }}!</h1>
+            </div>
+        {% else %}
+            <div class="background-img mx-0 px-0">
+                <img class="chicago" src="{% static 'images/chicago.jpg' %}" alt="">
+            </div>
+        {% endif %}
+    </div>
 {% endblock content %}

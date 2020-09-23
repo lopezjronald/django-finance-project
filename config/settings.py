@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # local
     'accounts',
+    'applicants',
     'pages',
     'jobs',
 ]
@@ -160,7 +161,7 @@ AUTHENTICATION_BACKENDS = (
 
 # SMPT Email Relay
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL = 'admin@scalptrade.com'
+DEFAULT_FROM_EMAIL = 'lopez.j.ronald@gmail.com'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = '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'

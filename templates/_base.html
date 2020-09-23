@@ -24,15 +24,15 @@
 
 <!--NAVBAR-->
 <nav id="base-navbar" class="navbar navbar-expand navbar-dark py-3">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}"><img class="img-responsive"
+    <div class="container-fluid">
+        <a class="navbar-brand ml-5" href="{% url 'home' %}"><img class="img-responsive"
                                                              src="{% static 'images/scalp.png' %}"
                                                              alt="responsive image"></a>
         <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto mr-5">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'home' %}">Home</a>
                 </li>
@@ -66,7 +66,7 @@
 <!--END OF NAVBAR-->
 
 <!--CONTENT-->
-<div class="container">
+<div class="container-fluid">
     {% block content %}
     {% endblock content %}
 </div>
@@ -77,7 +77,7 @@
 
 <section id="base-footer">
     <footer class="footer pt-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col text-right">
                     <p>Scalp Trade LLC Copyright &copy; <span id="year"></span></p>

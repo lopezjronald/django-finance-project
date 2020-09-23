@@ -13,8 +13,6 @@ class Job(models.Model):
     title = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
     description = models.TextField()
-    technical_requirements = models.TextField()
-    bonus_qualifications = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -24,25 +22,28 @@ class Job(models.Model):
         return reverse('job_detail', args=[str(self.id)])
 
 
-class Applicant(models.Model):
+
+
+
+class Requirement(models.Model):
     job = models.ForeignKey(
         Job,
         on_delete=models.CASCADE,
-        related_name='applicants',
+        related_name='requirements',
     )
-    user = models.ForeignKey(
-        get_user_model(),
-        on_delete=models.CASCADE,
-    )
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    email = models.CharField(max_length=100)
-    phone = models.CharField(max_length=10)
-    comments = models.TextField()
-    sponsorship = models.BooleanField(default=False)
-    resume = models.FileField(upload_to='resumes/')
-    cover_letter = models.FileField(upload_to='cover_letters/')
+    technical_requirement = models.CharField(max_length=255)
 
     def __str__(self):
-        template = '{0.first_name} {0.last_name}'
-        return template.format(self)
+        return self.technical_requirement
+
+
+class Qualification(models.Model):
+    job = models.ForeignKey(
+        Job,
+        on_delete=models.CASCADE,
+        related_name='qualifications',
+    )
+    bonus_qualification = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.bonus_qualification

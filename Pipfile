@@ -22,6 +22,7 @@ django-l10n = "*"
 django-translate = "*"
 path = "*"
 django-urls = "*"
+django-merged-inlines = "*"
 
 [requires]
 python_version = "3.8"

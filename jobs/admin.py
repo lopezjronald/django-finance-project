@@ -1,16 +1,23 @@
 from django.contrib import admin
-from .models import Job, Applicant
+from .models import Job, Requirement, Qualification
 
 
-class ApplicantInline(admin.StackedInline):
-    model = Applicant
+class RequirementInline(admin.TabularInline):
+    model = Requirement
+    extra = 3
+
+
+class QualificationInline(admin.TabularInline):
+    model = Qualification
+    extra = 3
 
 
 class JobAdmin(admin.ModelAdmin):
     inlines = [
-        ApplicantInline,
+        RequirementInline,
+        QualificationInline,
     ]
-    list_display = ('title', 'location',)
+    list_display = ('title', 'location')
 
 
 admin.site.register(Job, JobAdmin)
