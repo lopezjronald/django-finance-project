@@ -143,6 +143,7 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 # Custom Authorized User
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
+
 # LOGIN/LOGOUT/SIGNUP
 LOGIN_REDIRECT_URL = 'home'
 ACCOUNT_LOGOUT_REDIRECT = 'home'

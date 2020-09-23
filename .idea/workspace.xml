@@ -3,16 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="62e25493-c7b9-4bed-be29-1794d8d1b688" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applicants/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/applicants/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applicants/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/applicants/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applicants/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/applicants/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applicants/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applicants/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applicants/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applicants/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs/migrations/0002_auto_20200923_1547.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/jobs/job_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/jobs/job_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/jobs/job_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/jobs/job_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/cover_letters/Cover-Letter-Ronald-J-Lopez.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/cover_letters/Resume-Ronald-J-Lopez.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/resumes/Cover-Letter-Ronald-J-Lopez.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/resumes/Cover-Letter-Ronald-J-Lopez_cxKruMj.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/resumes/Resume-Ronald-J-Lopez.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/resumes/Resume-Ronald-J-Lopez.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/applicants/applicant_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/applicants/applicant_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600641584835</updated>
-      <workItem from="1600641587300" duration="136571000" />
+      <workItem from="1600641587300" duration="143119000" />
     </task>
     <servers />
   </component>
