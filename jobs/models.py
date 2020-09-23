@@ -5,10 +5,12 @@ from django.urls import reverse
 
 class Job(models.Model):
     title = models.CharField(max_length=100)
+    location = models.CharField(max_length=100)
     description = models.TextField()
     technical_requirements = models.TextField()
     bonus_qualifications = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
+
     # applicant = models.ForeignKey(
     #     get_user_model(),
     #     on_delete=models.CASCADE,
@@ -16,7 +18,6 @@ class Job(models.Model):
 
     def __str__(self):
         return self.title
-
 
 # class Applicant(models.Model):
 #     job = models.ForeignKey(

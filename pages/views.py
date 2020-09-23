@@ -6,7 +6,7 @@ class HomePageView(TemplateView):
 
 
 class CareerPageView(TemplateView):
-    template_name = 'careers.html'
+    template_name = 'job_list.html'
 
 
 class AboutPageView(TemplateView):

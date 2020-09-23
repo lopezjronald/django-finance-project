@@ -1,16 +1,21 @@
 {% extends '_base.html' %}
+
 {% block title %}{{ job.title }}{% endblock title %}
+
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="display-4">{{ job.title }}</h1>
-                <h3>Job Description</h3>
-                <p class="lead">{{ job.description }}</p>
-                <h3>Technical Requirements</h3>
-                <p class="lead">{{ job.technical_requirements }}</p>
-                <h3>Bonus Qualifications</h3>
-                <p class="lead">{{ job.bonus_qualifications }}</p>
+    <div class="job-detail">
+        <div class="container my-3">
+            <h4 class="text-muted">{{ job.location }}</h4>
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4">{{ job.title }}</h1>
+                    <h3>Job Description</h3>
+                    <p class="lead">{{ job.description }}</p>
+                    <h3>Technical Requirements</h3>
+                    <p class="lead">{{ job.technical_requirements }}</p>
+                    <h3>Bonus Qualifications</h3>
+                    <p class="lead">{{ job.bonus_qualifications }}</p>
+                </div>
             </div>
         </div>
     </div>

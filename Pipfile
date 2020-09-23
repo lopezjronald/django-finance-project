@@ -20,6 +20,8 @@ django-allauth-templates-bootstrap4 = "*"
 django-i18n = "*"
 django-l10n = "*"
 django-translate = "*"
+path = "*"
+django-urls = "*"
 
 [requires]
 python_version = "3.8"

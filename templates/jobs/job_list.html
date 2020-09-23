@@ -7,9 +7,9 @@
         {% for job in job_list %}
             <div class="row">
                 <div class="col">
-                    <a href="{% url 'job_detail' %} ">
+                    <a href="{% url 'job_detail' job.pk %}">
                         <p class="lead">
-                            Title {{ job.title }}
+                            {{ job.title }}
                         </p>
                     </a>
                 </div>
