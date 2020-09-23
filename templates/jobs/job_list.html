@@ -7,7 +7,7 @@
         {% for job in job_list %}
             <div class="row">
                 <div class="col">
-                    <a href="{% url 'job_detail' job.pk %}">
+                    <a href="{{ job.get_absolute_url }}">
                         <p class="lead">
                             {{ job.title }}
                         </p>
