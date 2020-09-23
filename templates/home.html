@@ -1,14 +1,15 @@
 {% extends '_base.html' %}
-{% load crispy_forms_tags %}
 {% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
     {% if user.is_authenticated %}
-        <div class="containter text-center">
+        <div class="container text-center mt-5">
             <img class="avatar" src="{% static 'images/avatar.jpg' %}" alt="">
-            <h1>Hello {{ user.email }}!</h1>
+            <h1 class="mt-3">Hello {{ user.email }}!</h1>
         </div>
+    {% else %}
+        <h2 class="mt-3">Homepage</h2>
     {% endif %}
 {% endblock content %}
