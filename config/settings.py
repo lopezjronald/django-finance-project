@@ -47,7 +47,6 @@ INSTALLED_APPS = [
 
     # local
     'accounts',
-    'applicants',
     'pages',
     'jobs',
 ]

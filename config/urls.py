@@ -29,5 +29,4 @@ urlpatterns = [
     # Django Local Apps
     path('', include('pages.urls')),
     path('jobs/', include('jobs.urls')),
-    path('applicants/', include('applicants.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

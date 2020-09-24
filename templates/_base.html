@@ -25,9 +25,9 @@
 <!--NAVBAR-->
 <nav id="base-navbar" class="navbar navbar-expand navbar-dark py-3">
     <div class="container-fluid">
-        <a class="navbar-brand ml-5" href="{% url 'home' %}"><img class="img-responsive"
-                                                             src="{% static 'images/scalp.png' %}"
-                                                             alt="responsive image"></a>
+        <a class="navbar-brand ml-5 px-5" href="{% url 'home' %}"><img class="img-responsive"
+                                                                  src="{% static 'images/scalp.png' %}"
+                                                                  alt="responsive image"></a>
         <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,24 +36,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'home' %}">Home</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'job_list' %}">Careers</a>
+                </li>
                 {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'application' %}">Apply</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                 {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'job_list' %}">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-                    </li>
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'about' %}">About Us</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>#}
+{#                    </li>#}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Employee Login</a>
                     </li>
@@ -79,7 +75,7 @@
     <footer class="footer pt-3">
         <div class="container-fluid">
             <div class="row">
-                <div class="col text-right">
+                <div class="col mr-5 text-right">
                     <p>Scalp Trade LLC Copyright &copy; <span id="year"></span></p>
                 </div>
             </div>
