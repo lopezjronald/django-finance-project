@@ -157,13 +157,6 @@ pip-selfcheck.json
 Dockerfile
 Pipfile
 Pipfile.lock
-accounts/
-config/
+config/settings.py
 docker-compose.yml
-jobs/
-manage.py
-media/
-pages/
 requirements.txt
-static/
-templates/

@@ -1,0 +1,14 @@
+<!-- templates/registration/signup.html -->
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Register{% endblock title %}
+
+{% block content %}
+    <h2 class="mt-4">Scalp Trade Application</h2>
+    <form method="post" action="{% url 'home' %}" class="mb-5">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-success mb-5" type="submit">Apply</button>
+    </form>
+{% endblock content %}
