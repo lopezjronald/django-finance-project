@@ -160,3 +160,5 @@ Pipfile.lock
 config/settings.py
 docker-compose.yml
 requirements.txt
+
+.gitignore
